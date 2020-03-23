@@ -29,11 +29,37 @@ Page({
         this.setData({
           dollar: res.result.dollar,
           rmb: res.result.rmb,
-          up:res.result.up,
-          eos: res.result.eos,
-          upeos: res.result.upeos,
+          up:res.result.up
+        })
+      },
+      fail: err => {
+        console.error('网络不好，多刷几次', err)
+
+      }
+    });
+    wx.cloud.callFunction({
+      name: 'geteth',
+      data: {},
+      success: res => {
+        //   console.log('[云函数] [login] user openid: ', res.result.openid)
+        this.setData({
           eth: res.result.eth,
           upeth: res.result.upeth
+        })
+      },
+      fail: err => {
+        console.error('网络不好，多刷几次', err)
+
+      }
+    });
+    wx.cloud.callFunction({
+      name: 'geteos',
+      data: {},
+      success: res => {
+        //   console.log('[云函数] [login] user openid: ', res.result.openid)
+        this.setData({
+          eos: res.result.eos,
+          upeos: res.result.upeos,
         })
       },
       fail: err => {
