@@ -22,7 +22,7 @@ Page({
   onLoad: function() {
     // 调用云函数
     wx.cloud.callFunction({
-      name: 'getprice',
+      name: 'getbtc',
       data: {},
       success: res => {
      //   console.log('[云函数] [login] user openid: ', res.result.openid)
