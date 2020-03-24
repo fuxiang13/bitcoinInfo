@@ -19,6 +19,12 @@
      <view class="list-item">
       <text class="request-text"> 24H涨跌幅: {{up}}</text>
     </view>
+     <view class="list-item">
+      <text class="request-text"> 24H最高价: {{high}}</text>
+    </view>
+     <view class="list-item">
+      <text class="request-text"> 24H最低价: {{low}}</text>
+    </view>
     <view class="list-item">
       <text class="request-text"> ETH以太坊（数据来自比特财经网）: </text>
     </view>

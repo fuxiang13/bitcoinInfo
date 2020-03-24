@@ -9,7 +9,9 @@ Page({
     eth:'',
     eos:'',
     upeth:'',
-    upeos:''
+    upeos:'',
+    high:'',
+    low:''
   },
   onPullDownRefresh: function () {
     wx.showNavigationBarLoading()
@@ -29,7 +31,9 @@ Page({
         this.setData({
           dollar: res.result.dollar,
           rmb: res.result.rmb,
-          up:res.result.up
+          up:res.result.up,
+          high:res.result.high,
+          low:res.result.low
         })
       },
       fail: err => {

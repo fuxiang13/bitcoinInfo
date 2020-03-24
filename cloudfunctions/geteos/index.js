@@ -6,7 +6,7 @@ cloud.init()
 // 云函数入口函数
 exports.main = async (event, context) => {
  // let url1 = 'http://price.btcfans.com/';
-  let url2 = 'https://www.btcmoney.cc/coin_detail/5.html';
+  let url2 = 'http://www.btcmoney.cc/coin_detail/5.html';
   //let url3 = 'https://www.btcmoney.cc/coin_detail/2.html';
   //console.log(rp(url).then());
  
